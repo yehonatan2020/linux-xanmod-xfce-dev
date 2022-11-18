@@ -1,16 +1,14 @@
 #!/usr/bin/env bash
 # shellcheck disable=SC2034
 
-iso_name="Linux-Xanmod-XFCE-Dev"
+iso_name="Linux-Zen-Xanmod-Dev"
 iso_label="LINUXARCH_$(date +%Y%m)"
 iso_application="Linuxarch GUI Live/Rescue CD"
 iso_version="$(date +%Y.%m)"
 install_dir="arch"
 buildmodes=('iso')
-#bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito'
-     #      'uefi-ia32.grub.esp' 'uefi-x64.grub.esp'
-       #    'uefi-ia32.grub.eltorito' 'uefi-x64.grub.eltorito')
-bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
+bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-ia32.grub.esp' 'uefi-x64.grub.esp' 'uefi-ia32.grub.eltorito' 'uefi-x64.grub.eltorito')
+#bootmodes=('bios.syslinux.mbr' 'bios.syslinux.eltorito' 'uefi-x64.systemd-boot.esp' 'uefi-x64.systemd-boot.eltorito')
 arch="x86_64"
 pacman_conf="pacman.conf"
 makepkg_conf="makepkg.conf"
@@ -28,4 +26,5 @@ file_permissions=(
   ["/usr/local/bin/alg-remove-nvidia"]="0:0:755"
   ["/usr/local/bin/alg-preset"]="0:0:755"
   ["/usr/local/bin/alg-finalisation"]="0:0:755"
+  ["/etc/sudoers.d"]="0:0:750"
 )

@@ -5,34 +5,19 @@ sudo plymouth-set-default-theme -R arch-glow
 sudo pacman-key --init
 sudo pacman-key --populate
 sudo pacman -Sy
-cd root/abootimg && sudo pacman --noconfirm -U abootimg-0.6-1-x86_64.pkg.tar.lzo && cd ../..
-rm -rf root/abootimg
-cd root/android-apktool && sudo pacman --noconfirm -U android-apktool-2.6.1-1-any.pkg.tar.lzo && cd ../..
-rm -rf root/android-apktool
-cd root/android-sdk-platform-tools && sudo pacman --noconfirm -U android-sdk-platform-tools-33.0.3-1-x86_64.pkg.tar.lzo && cd ../..
-rm -rf root/android-sdk-platform-tools
-cd root/android-udev-git && sudo pacman --noconfirm -U android-udev-git-20220903.r3.gac87fda-1-any.pkg.tar.lzo && cd ../..
-rm -rf root/android-udev-git
-cd root/autojump && sudo pacman -U --noconfirm autojump-22.5.3-9-any.pkg.tar.lzo && cd ../..
-rm -rf root/autojump
-cd root/dxvk-bin && sudo pacman --noconfirm -U dxvk-bin-1.10.3-1-x86_64.pkg.tar.lzo && cd ../..
-rm -rf root/dxvk-bin
-cd root/git-extras && sudo pacman --noconfirm -U git-extras-6.4.0-1-any.pkg.tar.lzo && cd ../..
-rm -rf root/git-extras
-#cd root/ncurses5-compat-libs && sudo pacman --noconfirm -U ncurses5-compat-libs-6.3-1-x86_64.pkg.tar.lzo && cd ../..
-#rm -rf root/ncurses5-compat-libs
-cd root/lib32-ncurses5-compat-libs && sudo pacman --noconfirm --needed -U lib32-ncurses5-compat-libs-6.3-1-x86_64.pkg.tar.lzo && cd ../..
-rm -rf root/lib32-ncurses5-compat-libs
-cd root/payload-dumper-go-bin && sudo pacman --noconfirm -U payload-dumper-go-bin-1.2.2-1-x86_64.pkg.tar.lzo && cd ../..
-rm -rf /root/payload-dumper-go-bin
-cd root/ttf-ms-win11-auto && sudo pacman --noconfirm -U ttf-ms-win11-auto-10.0.22621.382-1-any.pkg.tar.lzo && cd ../..
-rm -rf root/ttf-ms-win11-auto
-cd root/zramd && sudo pacman -U --noconfirm zramd-0.9.2-1-any.pkg.tar.lzo && cd ../..
-rm -rf root/zramd
-cd root/video-downloader-git && sudo pacman --noconfirm -U video-downloader-git-0.10.10.r3.g7383bcc-1-any.pkg.tar.lzo && cd ../..
-rm -rf root/video-downloader-git
-cd root/alg-cala-config-xanmod && sudo --noconfirm -U alg-cala-config-xanmod-22.07-4-any.pkg.tar.lzo && cd ..
-rm -rf  root/alg-cala-config-xanmod
+sudo pacman --noconfirm -U root/abootimg/abootimg-0.6-1-x86_64.pkg.tar.lzo && rm -rf root/abootimg
+sudo pacman --noconfirm -U root/android-apktool/android-apktool-2.6.1-1-any.pkg.tar.lzo && rm -rf root/android-apktool
+sudo pacman --noconfirm -U root/android-sdk-platform-tools/android-sdk-platform-tools-33.0.3-1-x86_64.pkg.tar.lzo && rm -rf root/android-sdk-platform-tools
+sudo pacman --noconfirm -U root/android-udev-git/android-udev-git-20220903.r3.gac87fda-1-any.pkg.tar.lzo && rm -rf root/android-udev-git
+sudo pacman --noconfirm -U root/autojump/autojump-22.5.3-9-any.pkg.tar.lzo && m -rf root/autojump
+sudo pacman --noconfirm -U root/dxvk-bin/dxvk-bin-1.10.3-1-x86_64.pkg.tar.lzo && rm -rf root/dxvk-bin
+sudo pacman --noconfirm -U root/git-extras/git-extras-6.4.0-1-any.pkg.tar.lzo && rm -rf root/git-extras
+sudo pacman --noconfirm -U root/lib32-ncurses5-compat-libs/lib32-ncurses5-compat-libs-6.3-1-x86_64.pkg.tar.lzo && rm -rf root/lib32-ncurses5-compat-libs
+sudo pacman --noconfirm -U root/payload-dumper-go-bin/payload-dumper-go-bin-1.2.2-1-x86_64.pkg.tar.lzo && rm -rf root/payload-dumper-go-bin
+sudo pacman --noconfirm -U root/ttf-ms-win11-auto/ttf-ms-win11-auto-10.0.22621.382-1-any.pkg.tar.lzo && rm -rf root/ttf-ms-win11-auto
+sudo pacman --noconfirm -U root/video-downloader-git/video-downloader-git-0.10.10.r3.g7383bcc-1-any.pkg.tar.lzo && rm -rf root/video-downloader-git
+sudo pacman --noconfirm -U root/zramd/zramd-0.9.2-1-any.pkg.tar.lzo && rm -rf root/zramd
+sudo pacman --noconfirm -U root/alg-cala-config-xanmod/alg-cala-config-xanmod-22.07-4-any.pkg.tar.lzo && rm -rf root/alg-cala-config-xanmod
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/avahi-discover.desktop
 sudo sed -i -e '$aNotShowIn=Gnome;KDE;' /usr/share/applications/avahi-discover.desktop
 sudo sed -i -e '$aNoDisplay=true' /usr/share/applications/bssh.desktop

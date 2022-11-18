@@ -331,6 +331,28 @@ vim-runtime
 vim
 zip
 
+#Optionals
+python-pyudev
+python-libevdev
+libgit2-glib
+libcamera-tools
+jack-example-tools
+libva-mesa-driver
+libva-intel-driver
+intel-media-driver
+libdecor
+ladspa
+libraw
+libwmf
+libzip
+pstoedit
+fig2dev
+scour
+python-boto
+unace
+unarj
+ruby
+
 #32-bit
 lib32-zlib
 lib32-ncurses
@@ -341,6 +363,21 @@ bluez
 bluez-utils
 pulseaudio-bluetooth
 bluetooth-autoconnect
+
+#PIPEWIRE
+gst-plugin-pipewire
+lib32-pipewire
+lib32-pipewire-jack
+lib32-pipewire-v4l2
+pipewire-alsa
+pipewire-docs
+pipewire-audio
+pipewire-media-session-docs
+pipewire-pulse
+pipewire-jack
+pipewire-v4l2
+pipewire-x11-bell
+pipewire-zeroconf
 
 #Office
 wps-office
@@ -366,11 +403,13 @@ ttf-liberation
 #Installer
 grub
 calamares
-alg-theme-cala-config
 os-prober
 
 #AUR Helper
 paru
+
+#MEMTEST
+memtest86+
 
 #Chaotic AUR
 chaotic-keyring
