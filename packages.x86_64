@@ -331,7 +331,7 @@ vim-runtime
 vim
 zip
 
-#Optionals
+#Extras
 python-pyudev
 python-libevdev
 libgit2-glib
